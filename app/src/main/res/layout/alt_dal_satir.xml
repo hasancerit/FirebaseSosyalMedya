@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/altDalText"
+        android:gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="KONU"
+        android:fontFamily="@font/bair"/>
+
+    <ToggleButton
+        android:id="@+id/altDalTakip"
+        android:textOff="TAKİP ET"
+        android:textOn="TAKİP"
+        android:layout_marginTop="10dp"
+        android:layout_width="90dp"
+        android:layout_height="30dp"
+        android:background="@drawable/alt_dal_takip_button"
+        android:textSize="13dp"
+        android:layout_marginLeft="10dp"
+        android:fontFamily="@font/hasanel"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"/>
+
+</RelativeLayout>
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:fontFamily="@font/bair"
+            android:id="@+id/baslik"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="BASLİK" />
+
+        <TextView
+            android:fontFamily="@font/bail"
+            android:id="@+id/aciklama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="ACIKLAMA" />
+
+        <com.example.hasan.myapplication.Utils.SquareImageView
+            android:id="@+id/image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+            <com.example.hasan.myapplication.Utils.SquareVideoView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/video"
+                android:visibility="gone"
+                android:layout_gravity="center_horizontal"/>
+        </FrameLayout>
+
+
+        <LinearLayout
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal">
+
+            <ToggleButton
+                android:id="@+id/begenButon"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/custom_button"
+                android:textOff=" "
+                android:textOn=" "
+                android:text=" "/>
+
+            <TextView
+                android:id="@+id/like"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="300"
+                android:paddingLeft="2dp"
+                android:fontFamily="@font/bair"
+                android:gravity="center_vertical"
+                android:textSize="11dp"/>
+
+            <Button
+                android:id="@+id/yorumAc"
+                android:layout_marginLeft="10dp"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/comment3"/>
+
+            <TextView
+                android:id="@+id/comment"
+                android:fontFamily="@font/bair"
+                android:paddingLeft="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="300"
+                android:textSize="11dp"
+                android:gravity="center_vertical"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/user"
+                android:textSize="11dp"
+                android:layout_marginRight="7dp"
+                android:fontFamily="@font/baimi"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="Hasan Cerit" />
+        </LinearLayout>
+
+    </LinearLayout>
+    </ScrollView>
+</android.support.v7.widget.CardView>

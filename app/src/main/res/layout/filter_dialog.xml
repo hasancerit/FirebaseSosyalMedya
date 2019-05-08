@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+        <TextView
+            android:gravity="center_horizontal"
+            android:id="@+id/filterTür"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:text="Tür"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:visibility="visible"
+            android:id="@+id/türFilterList"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:gravity="center_horizontal"
+            android:id="@+id/filterAlan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:hint="Alan"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:visibility="visible"
+            android:id="@+id/alanFilterList"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="8dp"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FİLTRELE"
+                android:id="@+id/filtrele"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Filtre Kaldır"
+                android:id="@+id/filtreKaldır"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

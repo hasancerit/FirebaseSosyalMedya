@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#ff1418</color>
+
+    <color name="sari">#9dff00</color>
+    <color name="mavi">#0004ff</color>
+    <color name="color1">#ff0000</color>
+    <color name="color2">#ff00bf</color>
+
+    <color name="tolbarColor">#203A43</color>
+
+
+    <color name="navigationNoSelected">#CA4639</color>
+    <color name="loginTextColor">#b3b3b3</color>
+
+    <color name="loginGirisColor">#F3F5F3</color>
+    <color name="loginGirisColor2">#CA4639</color>
+
+    <color name="renk1">#ffe100</color>
+    <color name="renk2">#001aff</color>
+
+    <color name="colorcard2">#DBDBDB</color>
+</resources>

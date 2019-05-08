@@ -1,0 +1,15 @@
+<merge>
+
+    <com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/bottomnav"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        app:menu="@menu/bottom_navigation_menu"
+        android:background="@color/tolbarColor"
+        app:itemIconTint="@drawable/bottom_navigation_text_background"
+        app:itemTextColor="@drawable/bottom_navigation_text_background"/>
+
+</merge>

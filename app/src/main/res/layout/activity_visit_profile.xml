@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.HomeActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:id="@+id/toolbarMProfile"
+            android:background="@color/tolbarColor"
+            app:titleTextColor="@android:color/white"
+            android:layout_height="50dp"/>
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+            android:layout_marginTop="60dp"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:background="@android:color/transparent"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/eins"
+                android:id="@+id/profieImage"/>
+            <TextView
+                android:id="@+id/profileName"
+                android:fontFamily="@font/b3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hasan Cerit"
+                android:textSize="17dp"/>
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:fontFamily="@font/b4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Postlar:"/>
+
+                    <TextView
+                        android:id="@+id/profilePost"
+                        android:fontFamily="@font/b4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="321"/>
+
+                <TextView
+                    android:fontFamily="@font/b4"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Takipçi:"/>
+                    <TextView
+                        android:id="@+id/profileTakipci"
+                        android:fontFamily="@font/b4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="321"/>
+
+                    <TextView
+                        android:fontFamily="@font/b4"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Takip:"/>
+                    <TextView
+                        android:id="@+id/profileTakip"
+                        android:fontFamily="@font/b4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="321"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/profileAciklama"
+                android:fontFamily="@font/b2"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:maxWidth="300dp"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text="Blgisayar Mühendisliği\nDenizli\nBabasının KIZI\n"/>
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/line" />
+        </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/profileRecycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+        </ScrollView>
+        <include layout="@layout/bottom_navigation_view"/>
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>
